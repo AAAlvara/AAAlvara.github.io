@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<body>
+
+    <?php 
+$company_name = "Pacific Property";
+$company_address = "123 Pendejo Street";
+$company_citystatezip = "Los Angeles, California, 90001";
+   
+//-----Start of Lab 3---//
+print "<h2>Lab 3 Assignment</h2>";
+echo "<a href='https://aalvarado1.000webhostapp.com//CMPSCI192/LabAssignments.php'>Debug OFF</a><br>";
+echo "<a href='https://aalvarado1.000webhostapp.com//CMPSCI192/LabAssignments.php?debug=true'>Debug ON</a><br>";
+if (!empty($_REQUEST['debug'])) {
+   $debug = true;
+   print "DEBUG turned ON<br>";
+  }
+else {
+   $debug = false;
+}
+if ($debug) { print "Now executing Lab 3, \$company_name contains $company_name<br>"; }
+
+
+   
+//-----End of Lab 3----//
+ print "<hr>";
+//------Start of Lab 2----//
+print "<h2>Lab 2 Assignment</h2>";
+print "<h1>$company_name</h1>";
+print "$company_address, $company_citystatezip";
+    
+//---------End of Lab 2 -----//
+    print "<hr>";
+//--------Start of Lab 1 ------//    
+print "<h2>Lab 1 Assignment</h2>";
+print "My name is Andrew Alvarado"; 
+
+?>
+
+</body>
+</html>
